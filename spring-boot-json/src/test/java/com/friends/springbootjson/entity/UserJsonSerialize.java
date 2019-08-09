@@ -1,7 +1,6 @@
 package com.friends.springbootjson.entity;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.friends.springbootjson.SpringBootJsonTest;
 
 import java.util.Date;
 

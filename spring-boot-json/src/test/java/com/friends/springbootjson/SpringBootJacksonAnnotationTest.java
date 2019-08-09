@@ -25,7 +25,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNot.not;
 import static org.junit.Assert.assertEquals;
 
-public class SpringBootJsonTest {
+public class SpringBootJacksonAnnotationTest {
 
     // ============================serialization annotations
     //1
