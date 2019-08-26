@@ -16,6 +16,8 @@
 		<module>spring-boot-testing</module>
 		<module>spring-boot-security-base</module>
 		<module>spring-boot-json</module>
+		<module>spring-boot-security-login</module>
+		<module>spring-boot-security-registration</module>
 	</modules>
 	<properties>
 		<java.version>1.8</java.version>
