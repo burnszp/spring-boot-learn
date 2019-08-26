@@ -1,11 +1,5 @@
 /*
 Navicat MySQL Data Transfer
-
-Source Server         : mgzx
-Source Server Version : 50641
-Source Host           : 47.104.156.230:3306
-Source Database       : registration_02
-
 Target Server Type    : MYSQL
 Target Server Version : 50641
 File Encoding         : 65001
