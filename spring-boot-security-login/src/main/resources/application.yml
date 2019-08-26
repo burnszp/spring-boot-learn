@@ -7,13 +7,13 @@ server:
       timeout: 1m
 spring:
   datasource:
-    password: ""
+    password: higuys
     maxIdle: 50
     validationQuery: SELECT 1 FROM DUAL
     testWhileIdle: true
     timeBetweenEvictionRunsMillis: 600000
     maxWait: 120000
-    url: jdbc:mysql://localhost:3306/registration_02?autoReconnect=true&autoReconnectForPools=true&useUnicode=true&zeroDateTimeBehavior=round
+    url: jdbc:mysql://127.0.0.1:3306/security_login?autoReconnect=true&autoReconnectForPools=true&useUnicode=true&zeroDateTimeBehavior=round&serverTimezone=UTC
     maxActive: 255
     username: root
   jpa:
