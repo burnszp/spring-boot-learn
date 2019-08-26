@@ -3,3 +3,4 @@
 - Spring Boot 中Json的使用，Jackson注解详解[csdn](https://blog.csdn.net/NDKHBWH/article/details/98212326)  /  [简书](https://www.jianshu.com/p/3dd1cdaa33f2)
 - Spring Boot 中Jackson配置，ObjectMapper使用详解[csdn](https://blog.csdn.net/NDKHBWH/article/details/98848770)  /  [简书](https://www.jianshu.com/p/62cdb0086ca0)
 - Spring Security 对Rest风格API的保护[csdn](https://blog.csdn.net/NDKHBWH/article/details/99458246)  /  [简书](https://www.jianshu.com/p/e9009ff8f2bf)
+- Spring Security 用户，角色和权限 详解[csdn](https://blog.csdn.net/NDKHBWH/article/details/100074764)  /  [简书](https://www.jianshu.com/p/500532e8e738)
