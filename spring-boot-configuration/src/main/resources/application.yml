@@ -1,0 +1,35 @@
+user-defined:
+  attribute: hi friends !
+acme:
+  wo:
+    configStr: hi boys!
+    configInt: 133
+    enabled: true
+    myPojo:
+      firstName: Joseph
+      lastName: Tribbiani
+    remote-address: 192.168.1.1
+    security:
+      username: admin
+      password: admin
+      roles:
+      - USER
+      - ADMIN
+    arrayProps: 1,2,3,4,5
+    listProp1:
+    - name: abc
+      value: abcValue
+    - name: efg
+      value: efgValue
+    listProp2:
+    - config2Value1
+    - config2Vavlue2
+    mapProps:
+      key1: value1
+      key2: value2
+    list:
+      - firstName: Joseph
+        lastName: Tribbiani
+      - firstName: Chandler
+        lastName:  Bing
+
