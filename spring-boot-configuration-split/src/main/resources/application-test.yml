@@ -1,0 +1,4 @@
+user-defined:
+  test-configuration: hi this dev config!!
+server:
+  port: 6666

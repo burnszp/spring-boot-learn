@@ -1,0 +1,29 @@
+##多文件配置
+spring:
+  profiles:
+    #include: comm,dev
+    active:
+      - comm
+      - dev
+
+##单文件配置
+#spring:
+#  profiles:
+#    active: profilesF
+#user-defined:
+#  common-configuration: hi this common config!!
+#---
+#server:
+#  port: 8000
+#spring:
+#  application:
+#    name: SplitF
+#  profiles: profilesF
+#---
+#server:
+#  port: 8001
+#spring:
+#  application:
+#    name: SplitS
+#  profiles: profilesS
+
