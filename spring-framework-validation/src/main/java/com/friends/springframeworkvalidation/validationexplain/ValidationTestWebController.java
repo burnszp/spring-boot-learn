@@ -1,4 +1,4 @@
-package com.friends.springframeworkvalidation;
+package com.friends.springframeworkvalidation.validationexplain;
 
 import org.hibernate.validator.constraints.Length;
 import org.springframework.validation.annotation.Validated;
