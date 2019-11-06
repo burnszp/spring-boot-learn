@@ -1,0 +1,19 @@
+https://docs.spring.io/spring-data/jpa/docs/2.1.6.RELEASE/reference/html/
+https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-sql.html#boot-features-jpa-and-spring-data
+https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/htmlsingle/
+https://github.com/spring-projects/spring-data-examples
+https://spring.io/guides/gs/accessing-data-jpa/
+https://spring.io/guides/gs/accessing-data-rest/
+https://spring.io/guides/gs/accessing-data-mysql/
+jpa规范
+http://openjpa.apache.org/docs/openjpa-0.9.0-incubating/manual/manual.html#openjpa_intro
+jpa实现
+https://javadoc.io/doc/org.eclipse.persistence/javax.persistence/2.2.0
+https://github.com/javaee/jpa-spec
+#dynamic query
+https://stackoverflow.com/questions/30431035/spring-jpa-repository-dynamic-query
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#specifications
+#单表的动态更新
+https://stackoverflow.com/questions/52162452/how-to-use-hibernate-dynamicupdate-with-spring-data-jpa
+#package-info
+https://www.iteye.com/blog/strong-life-126-com-806246
