@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  datasource:
+    password: higuys
+    maxIdle: 50
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 600000
+    maxWait: 120000
+    url: jdbc:mysql://127.0.0.1:3306/jpa?autoReconnect=true&autoReconnectForPools=true&useUnicode=true&zeroDateTimeBehavior=round&serverTimezone=GMT%2B8
+    maxActive: 255
+    username: root
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+#    org.hibernate.SQL: debug
+    org.hibernate.engine.QueryParameters: debug
+    org.hibernate.engine.query.HQLQueryPlan: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+
