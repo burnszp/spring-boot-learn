@@ -10,5 +10,4 @@ public class SpringBootSecurityBaseApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootSecurityBaseApplication.class, args);
     }
-
 }
