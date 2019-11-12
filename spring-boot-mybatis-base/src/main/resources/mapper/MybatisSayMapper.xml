@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybaits.springboot.springbootmybatisbase.mapper.MybatisSayMapper">
+  <resultMap id="BaseResultMap" type="com.mybaits.springboot.springbootmybatisbase.mapper.MybatisSay">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="say" jdbcType="VARCHAR" property="say" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, say
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from mybatis_say
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from mybatis_say
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mybaits.springboot.springbootmybatisbase.mapper.MybatisSay">
+    insert into mybatis_say (id, say)
+    values (#{id,jdbcType=INTEGER}, #{say,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.mybaits.springboot.springbootmybatisbase.mapper.MybatisSay">
+    insert into mybatis_say
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="say != null">
+        say,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="say != null">
+        #{say,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mybaits.springboot.springbootmybatisbase.mapper.MybatisSay">
+    update mybatis_say
+    <set>
+      <if test="say != null">
+        say = #{say,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mybaits.springboot.springbootmybatisbase.mapper.MybatisSay">
+    update mybatis_say
+    set say = #{say,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
