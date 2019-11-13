@@ -1,6 +1,5 @@
 package com.friends.springbootaop.advice;
 
-import lombok.Data;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
