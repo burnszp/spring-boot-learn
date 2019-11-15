@@ -7,3 +7,4 @@
 
 ---
 - Mybatis使用(一) 与SpringBoot整合 [点击访问](http://www.ohbee.cn/archives/154)
+- Mybatis代码生成器Generator的使用 [点击访问](http://www.ohbee.cn/archives/451)
