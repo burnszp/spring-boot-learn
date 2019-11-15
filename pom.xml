@@ -28,6 +28,8 @@
 		<module>spring-boot-security-login-extra-fields</module>
 		<module>spring-boot-security-registration</module>
         <module>spring-boot-mybatis-base</module>
+
+        <module>mybatis-generator</module>
 	</modules>
 	<properties>
 		<java.version>1.8</java.version>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--指定加载本地文件，一般加载jdbc驱动，若在pom.xml中配置了依赖则可不用添加-->
+    <!--<classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />-->
+
+    <!--指定properties位置，将变量配置到generator.properties中-->
+    <properties resource="generator.properties"/>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <!--可以使用一系列的内部差价，例如实体生成序列化，.EqualsHashCode,toString方法等-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!--自定义注释,suppressAllComments关闭所有注释,关闭创建时间的注释-->
+        <commentGenerator >
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--设置数据库连接信息-->
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                        connectionURL="${jdbc.connectionURL}" userId="${jdbc.userId}"
+                        password="${jdbc.password}"/>
+
+        <!--指定数据库类型对应java实体类的转换方式，一般保证默认值就可以-->
+        <javaTypeResolver >
+            <!--对DECIMAL和NUMERIC列不使用java.math.BigDecimal类型-->
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!--实体类生成配置-->
+        <!--targetProject相对于项目目录地址,若此值为MAVEN则默认在\target\generated-sources包下生成数据;targetPackage放置到包路径下-->
+        <!--enableSubPackages是否可以自动生成子包，trimStrings为数据库返回值自动修剪空串-->
+        <javaModelGenerator targetPackage="${entityPath}" targetProject="${basePath}">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!--生成sql映射文件配置-->
+        <sqlMapGenerator targetPackage="${entityPath}"  targetProject="${basePath}">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!--java接口生成器-->
+        <!--type配置是否带有xml配置文件的dao接口，还有生成xml和注解混用，或者单注解的dao；type="XMLMAPPER"只生成对应xml类型的dao接口-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${entityPath}"  targetProject="${basePath}">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--表映射配置  tableName表名，domainObjectName生成实体名-->
+        <!--*ByExample，设置为false将不会生成范例-->
+        <table  tableName="${table.name}" domainObjectName="${domain.name}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"/>
+    </context>
+</generatorConfiguration>
