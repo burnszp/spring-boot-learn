@@ -4,7 +4,7 @@ import com.friends.springbootsecurity.login.extra.fields.dao.UserRepository;
 import com.friends.springbootsecurity.login.extra.fields.dao.RoleRepository;
 import com.friends.springbootsecurity.login.extra.fields.dto.UserDto;
 import com.friends.springbootsecurity.login.extra.fields.error.UserAlreadyExistException;
-import com.friends.springbootsecurity.login.extra.fields.plan.a.model.User;
+import com.friends.springbootsecurity.login.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,6 +1,6 @@
 package com.friends.springbootsecurity.login.extra.fields.dao;
 
-import com.friends.springbootsecurity.login.extra.fields.plan.a.model.Role;
+import com.friends.springbootsecurity.login.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RoleRepository extends JpaRepository<Role, Long> {

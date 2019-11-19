@@ -1,9 +1,9 @@
 package com.friends.springbootsecurity.login.extra.fields.service;
 
 import com.friends.springbootsecurity.login.extra.fields.dao.UserRepository;
-import com.friends.springbootsecurity.login.extra.fields.plan.a.model.Privilege;
-import com.friends.springbootsecurity.login.extra.fields.plan.a.model.Role;
-import com.friends.springbootsecurity.login.extra.fields.plan.a.model.User;
+import com.friends.springbootsecurity.login.model.Privilege;
+import com.friends.springbootsecurity.login.model.Role;
+import com.friends.springbootsecurity.login.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
