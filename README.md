@@ -5,6 +5,7 @@
 - SpringBoot配置文件使用(二)配置文件拆分（spring-boot-configuration-split）  [点击访问](http://www.ohbee.cn/archives/215)
 - SpringBoot项目打war包部署（spring-boot-build-war）  [点击访问](http://www.ohbee.cn/archives/432)
 - SpringBoot缓存原理（spring-boot-cache）  [点击访问](http://www.ohbee.cn/archives/543)
+- SpringBoot缓存相关的注解使用（spring-boot-cache-annotation）  [点击访问](http://www.ohbee.cn/archives/618)
 --- 
 # spring-security
 - SpringSecurity保护RestAPI（spring-boot-security-base） [点击访问](http://www.ohbee.cn/archives/480)
